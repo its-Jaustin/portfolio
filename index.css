@@ -38,6 +38,7 @@
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
     --purple: #820761;
+    --purple-1: #ab388c;
 
 
 
@@ -73,7 +74,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--purple);/*html body color was --black*/
+    background: var(--purple-1);/*html body color was --black*/
     overflow-x: hidden;
 }
 
@@ -202,7 +203,7 @@ a {
 
 button:focus,
 a:focus {
-    outline: 2px solid var(--purple);
+    outline: 2px solid var(--white-1);
 }
 
 body:not(.user-is-tabbing) button:focus,
@@ -225,7 +226,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .btn:focus {
-    outline: none;
+    outline: 2px solid var(--white-1);
 }
 
 .btn::after {
