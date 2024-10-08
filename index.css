@@ -38,6 +38,8 @@
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
+    --purple: #bf0f90;
+
 
 
     --container-max-width: 1180px;
@@ -51,7 +53,7 @@
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
-    --border-light: 1px solid rgb(36, 35, 35);
+    --border-light: 1px solid rgb(100, 100, 100); /*shadow color*/
 }
 
 html {
@@ -72,7 +74,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: var(--pink);/*html body color*/
     overflow-x: hidden;
 }
 
