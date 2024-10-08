@@ -539,7 +539,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .skills {
   padding: var(--gutter-huge) 0;
-  background-color: var(--grey);
+  background: var(--grey);
 }
 
 .skills__list {
@@ -615,7 +615,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
     max-width: var(--container-medium-width);
-    background-color: var(--grey);
+    background: var(--grey);
 }
 
 /* --------------------------------------- */
