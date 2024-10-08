@@ -531,7 +531,49 @@ body:not(.user-is-tabbing) a:focus {
         margin-right: var(--gutter-medium);
     }
 }
+/* --------------------------------------- */
+/* ----- Skills ----- */
+/* --------------------------------------- */
 
+.skills {
+  padding: var(--gutter-huge) 0;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skills__item {
+  background-color: var(--white);
+  color: var(--purple);
+  padding: 1rem 2rem;
+  font-family: 'Jost', sans-serif;
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.skills__item:hover {
+  transform: scale(1.05);
+}
+
+@media(max-width: 600px) {
+  .skills__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills__item {
+    width: 80%;
+    text-align: center;
+  }
+}
 /* --------------------------------------- */
 /* ----- About ----- */
 /* --------------------------------------- */
