@@ -35,10 +35,9 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
-    --purple: #bf0f90;
+    --purple: #820761;
 
 
 
@@ -406,7 +405,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /*background: linear-gradient(rgba(200,0,200, .25), rgba(0,0,0, .4)),*/
 .header {
-    background: linear-gradient(rgba(200,0,200, .25), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(125,0,125, .25), rgba(0,0,0, .25)), 
         url('./images/bg-1.jpg');
     height: 100vh;
     background-size: cover;
