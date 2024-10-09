@@ -598,7 +598,7 @@ body:not(.user-is-tabbing) a:focus {
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
     width: auto;
-    height: 1500px;
+    max-height: 600px;
 }
 
 @media(min-width: 901px) {
