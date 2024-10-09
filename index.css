@@ -598,7 +598,13 @@ body:not(.user-is-tabbing) a:focus {
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
     width: auto;
-    max-height: 600px;
+    max-height: 800px;
+
+}
+.about__photo-container img {
+    max-height: 100%; /* Image height will respect the container's height */
+    width: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
 }
 
 @media(min-width: 901px) {
