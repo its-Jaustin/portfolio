@@ -54,7 +54,7 @@
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
 
-    --border-light: 1px solid rgb(100, 100, 100); /*shadow color*/
+    --border-light: 1px solid rgb(200, 0, 200); /*shadow color*/
 }
 
 html {
@@ -75,7 +75,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: var(--purple-1);/*html body color was --black*/
+    background: linear-gradient(rgba(67,0,112, .25), rgba(148,0,252, .25));/*html body color was --black*/
     overflow-x: hidden;
 }
 
