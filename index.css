@@ -40,8 +40,8 @@
     --purple: #820761;
     --purple-1: #ab388c;
     --grey: #2e272c;
-    --dark-purp: #660187;
-    --lav: #660187;
+    --dark-purple: #660187;
+    --lavender: #660187;
 
 
 
@@ -77,7 +77,7 @@ body {
     font-weight: 400;
     color: var(--white-1);
     line-height: var(--line-height-normal);
-    background: linear-gradient(to right, --dark-purp, --lav);/*html body color was --black*/
+    background: linear-gradient(to right, var(--dark-purple), var(--lavender));/*html body color was --black*/
     overflow-x: hidden;
 }
 
