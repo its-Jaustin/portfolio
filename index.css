@@ -599,10 +599,11 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: var(--gutter-normal);
     width: auto;
     max-height: 600px;
+    overflow: hidden;
 
 }
 .about__photo-container img {
-    max-height: 50%; /* Image height will respect the container's height */
+    max-height: 100%; /* Image height will respect the container's height */
     width: auto; /* Maintains the aspect ratio */
     object-fit: cover; /* Ensures the image covers the container without stretching */
 }
@@ -616,6 +617,10 @@ body:not(.user-is-tabbing) a:focus {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
     }
+    .about__photo-container img {
+    max-height: 100%; /* Image height will respect the container's height */
+    width: auto; /* Maintains the aspect ratio */
+    object-fit: cover;/* Ensures the image covers the container without stretching */
 }
 
 /* --------------------------------------- */
