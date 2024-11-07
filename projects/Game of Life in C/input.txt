@@ -1,0 +1,7 @@
+5 4
+1
+g x x r
+r x g g
+x x r x
+r g x r
+x r x x

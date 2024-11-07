@@ -1,0 +1,13 @@
+all : conway.out
+
+conway.out : conway.o board.o
+	gcc -Wall -o conway.out conway.o board.o
+
+conway.o : conway.c board.h
+	gcc -Wall -c conway.c
+
+board.o : board.c board.h
+	gcc -Wall -c board.c
+
+clean:
+	rm conway.o board.o conway.out

@@ -1,0 +1,16 @@
+all : froggy
+
+#generate the parser with Bison
+frogparse.tab.c : frogparse.y
+	bison -d frogparse.y #generates parser C file and header
+
+#Generate the lexer with Flex
+lex.yy.c : froglex.l
+	flex froglex.l #generates lex.yy.c
+
+
+froggy : frogparse.tab.c lex.yy.c
+	gcc -o froggy frogparse.tab.c lex.yy.c -lfl
+
+clean:
+	rm -f frogparse.tab.c lex.yy.c frogparse.tab.h
