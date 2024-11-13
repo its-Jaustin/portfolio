@@ -1,4 +1,9 @@
-#---Pseudcode Each line will correspond to a frog language statement---
+#---Pseudcode Each line will correspond to a froggy language statement---
+#the parser includes a few extra print statements for readability
+#however the point of this project was to be able to create
+#the language, I was purposfully trying to make this unreadable
+#for the sake of my own amusment. 
+
 #frog = 8;
 #output(frog);
 #bruh = 9.1;
