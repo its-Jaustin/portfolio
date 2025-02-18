@@ -598,6 +598,7 @@ body:not(.user-is-tabbing) a:focus {
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
     width: auto;
+    height: "50%";
     overflow: hidden;
 
 }
