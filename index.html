@@ -42,6 +42,7 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
@@ -59,8 +60,13 @@
           <span>Austin Jackson</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>Computer Science Major at GVSU</p>
-        <a href="#contact" class="btn btn--purple">Get in touch</a>
+        <p>Software engineer focused on testing, cloud, and full-stack web. Graduating May 2026.</p>
+        <div class="hero__ctas">
+          <a href="mailto:austin.jackson.8543@gmail.com" class="btn btn--purple">Email me</a>
+          <a href="https://docs.google.com/document/d/1XeZuG0dG_50awQdJSCsKQJvsul7Woy3aqvoTf1MNeRg/edit?usp=sharing" class="btn">View resume</a>
+          <a href="https://github.com/its-Jaustin" class="btn">GitHub</a>
+          <a href="https://www.linkedin.com/in/austin-jackson-b94970295" class="btn">LinkedIn</a>
+        </div>
       </div>
     </div>
   </header>
@@ -71,85 +77,106 @@
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Projects</h2>
+        <h2>Featured Projects</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Texas Hold ’em Poker / Blackjack</h3>
+              <h3>Nowhere Collective Trashy Marketplace</h3>
               <p>
-                A poker and blackjack game application, play against the computer player and see if you can beat the basic rule-based AI we designed.
+                Rebuilt a marketplace MVP with modern tooling to support real-time offers, messaging, and authentication for a student-led client.
               </p>
+              <div class="stack-chips">
+                <span class="chip">Next.js</span>
+                <span class="chip">React</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">Tailwind</span>
+                <span class="chip">Jest/RTL</span>
+              </div>
               <ul class="work__list">
-                <li>Python</li>
-                <li>Pygame based GUI</li>
-                <li>Unit testing with Pytest</li>
-                <li>Coverage Testing</li>
+                <li>Built reusable component library and UI flows for offers, messaging, and auth.</li>
+                <li>Deployed to Firebase Hosting; migrated data/auth from legacy platform.</li>
+                <li>Added Jest/RTL coverage to keep the MVP shippable as features grow.</li>
               </ul>
               <div class="work__links">
-                <a href="https://github.com/its-Jaustin/portfolio" class="link__text">
-                  See my code <span>&rarr;</span>
+                <a href="https://react-trashymarketplace.web.app/" class="link__text">
+                  Live site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/parkerharmon/Nowhere_Collective" class="link__text">
+                  See the repo <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/its-Jaustin/portfolio">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="My GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/poker-screenshot.png" class="work__image" alt="Project 1" />
+              <img src="./images/trashy-marketplace.png" class="work__image" alt="Trashy Marketplace UI" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>GhostHuntersInc</h3>
+              <h3>Fishite (Cloud-run Multiplayer)</h3>
               <p>
-                Created a simple database in PostgreSQL for a ghost hunting business. This idea was loosly based off of Phasmophobia. Using the evidence gathered the goal is to be able to determine a ghost's GhostType by finding evidence with three different equipment. Sample queries are shown at the bottom of the code given in the repo. 
+                Event-driven multiplayer server deployed on Google Cloud to handle traffic bursts and automated game events.
               </p>
+              <div class="stack-chips">
+                <span class="chip">GCP</span>
+                <span class="chip">Cloud Run</span>
+                <span class="chip">Pub/Sub</span>
+                <span class="chip">Cloud Scheduler</span>
+                <span class="chip">Cloud Storage</span>
+              </div>
               <ul class="work__list">
-                <li>ER Diagram</li>
-                <li>Relational Schema</li>
-                <li>Normalization Techniques</li>
-                <li>PostgreSQL</li>
+                <li>Load-balanced Cloud Run services to keep gameplay responsive under bursty load.</li>
+                <li>Pub/Sub + Scheduler drive periodic events without manual ops.</li>
+                <li>Cloud Storage persists player state safely across deployments.</li>
               </ul>
               <div class="work__links">
-                <a href="https://github.com/its-Jaustin/GhostHuntersInc" class="link__text">
-                  See my code <span>&rarr;</span>
+                <a href="https://github.com/Sanccarm/Fishite" class="link__text">
+                  See the repo <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/its-Jaustin">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/Sanccarm/Fishite">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="My GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/phasmo.jpg" class="work__image" alt="Project 1" />
+              <img src="./images/fishite.png" class="work__image" alt="Fishite Cloud Architecture" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Cantus Firmus</h3>
+              <h3>The Simpsons Arcade</h3>
               <p>
-                Need help writing a meoldy? Get the music theory out of the way an get a generated Cantus Firmus. That way you already know what notes to hit.  
+                2D arcade game with state-machine driven sprites and simple enemy AI.
               </p>
+              <div class="stack-chips">
+                <span class="chip">Python</span>
+                <span class="chip">Pygame</span>
+                <span class="chip">State Machines</span>
+              </div>
               <ul class="work__list">
-                <li>Music Theory</li>
-                <li>Passion Project</li>
-                <li>Random Generation</li>
+                <li>Implemented movement and combat loops with sprite state machines.</li>
+                <li>Built basic enemy AI and collisions for arcade gameplay.</li>
+                <li>Packaged assets and scenes for quick demos and playtesting.</li>
               </ul>
               <div class="work__links">
-                <a href="https://github.com/its-Jaustin/portfolio" class="link__text">
-                  See my code <span>&rarr;</span>
+                <a href="https://github.com/its-Jaustin/The-Simpsons-Arcade" class="link__text">
+                  See the repo <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/its-Jaustin/portfolio">
+                <a href="https://github.com/its-Jaustin/The-Simpsons-Arcade">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/cf-screenshot.png" class="work__image" alt="Project 3" />
+              <img src="./images/cf-screenshot.png" class="work__image" alt="Simpsons Arcade gameplay" />
             </div>
             
           </div>
@@ -162,10 +189,54 @@
     <section class="more-projects" id="more-projects">
       <div class="row">
         <h2>More Projects</h2>
-        <p>
-          Interested in seeing more? Check out my GitHub portfolio for additional projects and contributions.
-        </p>
-        <a href="https://github.com/its-Jaustin/portfolio" class="btn btn--purple">View my GitHub</a>
+        <p>More coursework and personal builds:</p>
+        <ul class="more-projects__list">
+          <li><strong>Texas Hold ’em Poker / Blackjack</strong> — Python/Pygame, rule-based AI, Pytest coverage.</li>
+          <li><strong>Froggy Language</strong> — C-like toy language with Bison/Flex parsing.</li>
+          <li><strong>GhostHuntersInc</strong> — PostgreSQL DB design with ERD, schema, and sample queries.</li>
+          <li><strong>Cantus Firmus Generator</strong> — Music theory–driven melody generation.</li>
+        </ul>
+        <a href="https://github.com/its-Jaustin" class="btn btn--purple">View my GitHub</a>
+      </div>
+    </section>
+    <!-- ***** Experience ***** -->
+
+    <section class="experience" id="experience">
+      <div class="row">
+        <h2>Experience</h2>
+        <div class="experience__cards">
+          <div class="experience__card">
+            <div class="experience__heading">
+              <h3>Software Engineering Intern — Dematic</h3>
+              <p class="experience__meta">May 2025 - Present</p>
+            </div>
+            <ul>
+              <li>System and performance testing in Java; design/run cases for reliability.</li>
+              <li>Bridge software with firmware/hardware on commissioning teams.</li>
+              <li>Debug multi-container Docker/Kubernetes deployments to improve stability.</li>
+            </ul>
+          </div>
+          <div class="experience__card">
+            <div class="experience__heading">
+              <h3>IT Services Helpdesk — GVSU</h3>
+              <p class="experience__meta">September 2024 - May 2025</p>
+            </div>
+            <ul>
+              <li>Troubleshot software/network issues for students, faculty, and staff.</li>
+              <li>Handled account setups and ticket resolution in a fast-paced queue.</li>
+            </ul>
+          </div>
+          <div class="experience__card">
+            <div class="experience__heading">
+              <h3>Deck Supervisor / Swim Instructor — Goldfish Swim School</h3>
+              <p class="experience__meta">May 2023 - May 2025</p>
+            </div>
+            <ul>
+              <li>Supervised, trained, and mentored 4–8 instructors per shift.</li>
+              <li>Drove customer satisfaction by addressing parent/student concerns.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ***** Clients ***** -->
@@ -173,28 +244,49 @@
     <section class="skills" id="skills">
       <div class="row">
         <h2>Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__item">Python</li>
-          <li class="skills__item">C Programming</li>
-          <li class="skills__item">Linux</li>
-          <li class="skills__item">SQL</li>
-          <li class="skills__item">Windows</li>
-          <li class="skills__item">Java</li>
-          <li class="skills__item">C++</li>
-          <li class="skills__item">C#</li>
-          <li class="skills__item">Unity</li>
-          <li class="skills__item">JavaScript</li>
-          <li class="skills__item">Git</li>
-          <li class="skills__item">HTML</li>
-          <li class="skills__item">CSS</li>
-          <li class="skills__item">Excel</li>
-          <li class="skills__item">Mac OS</li>
-          <li class="skills__item">Android</li>
-          <li class="skills__item">iOS</li>
-          <li class="skills__item">SolidWorks</li>
-          <li class="skills__item">Adobe Photoshop</li>
-          <li class="skills__item">Adobe Premiere</li>
-        </ul>
+        <div class="skills__groups">
+          <div class="skills__group">
+            <h3>Primary</h3>
+            <ul class="skills__chips">
+              <li class="chip">Java</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">React</li>
+              <li class="chip">Next.js</li>
+              <li class="chip">Firebase</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Kubernetes</li>
+              <li class="chip">GCP</li>
+              <li class="chip">Jest/RTL</li>
+              <li class="chip">Python</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Familiar</h3>
+            <ul class="skills__chips">
+              <li class="chip">SQL</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">C</li>
+              <li class="chip">C++</li>
+              <li class="chip">C#</li>
+              <li class="chip">Unity</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">HTML/CSS</li>
+              <li class="chip">Linux</li>
+              <li class="chip">Git</li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3>Other</h3>
+            <ul class="skills__chips">
+              <li class="chip">Grafana</li>
+              <li class="chip">Windows</li>
+              <li class="chip">Mac OS</li>
+              <li class="chip">Android/iOS</li>
+              <li class="chip">Adobe</li>
+              <li class="chip">Excel</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -207,7 +299,7 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I am a dedicated Computer Science major at GVSU with a passion for many different subjects. With a solid foundation with programming languages such as Python, C Programming, and SQL, I am excited to learn as much as possible to tackle real world problems. I have much experience with customer service, and I strive to contibute positively to every team I'm apart of. Outside of coding, I enjoy physical activity, video games, music, and exploring new technology. 
+              I’m a GVSU computer science major (graduating May 2026) and Dematic software engineering intern. I focus on system/performance testing in Java, debugging containerized deployments, and building full-stack web apps with React/Next.js and Firebase. Comfortable bridging firmware/hardware with software and keeping releases stable with strong tests.
             </p>
             <a href="https://docs.google.com/document/d/1XeZuG0dG_50awQdJSCsKQJvsul7Woy3aqvoTf1MNeRg/edit?usp=sharing" class="btn">My Resume</a>
             
@@ -229,10 +321,10 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          I'm always open to new opportunities and eager to contribute to innovative projects. If you're interested in learning more about my experience or would like to discuss how I can bring value to your team, feel free to reach out via email. I look forward to connecting with you!
+          I’m open to software engineering roles and internships. If you want to talk about testing, cloud, or full-stack work—or just chat about a project— please reach out.
         </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:jacksoa2@mail.gvsu.edu" class="btn">jacksoa2@mail.gvsu.edu</a>
+        <a href="mailto:austin.jackson.8543@gmail.com" class="btn">austin.jackson.8543@gmail.com</a>
       </div>
     </div>
   </section>
@@ -252,7 +344,7 @@
         </li>
         -->
         <li class="footer__social-link-item">
-          <a href="https://github.com/its-Jaustin/portfolio" title="Link to Github Protfolio">
+          <a href="https://github.com/its-Jaustin" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
